@@ -66,6 +66,8 @@ body {
 
 .heading {
   margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
 
   color: var(--interim-heading-color);
   font-weight: 700;
@@ -100,6 +102,10 @@ body {
   background-color: var(--white-color);
 }
 
+.page-head{
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 .basement .logo > span {
   color: var(--white-color);
 }
@@ -110,8 +116,6 @@ body {
 
 .head-container{
   display: flex;
-
-  border-bottom: 1px solid var(--header-border-color);
 }
 
 .head-navigation{
@@ -170,6 +174,9 @@ body {
 
 .hero .container{
   text-align: center;
+}
+
+.hero{
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -199,6 +206,10 @@ body {
 .footer-nav .link {
   color: var(--footer-links-color);
   font-style: normal;
+}
+
+.footer-nav li:not(:last-child){
+  margin-bottom: 9px;
 }
 
 .footer-nav .link:hover,
@@ -250,8 +261,14 @@ body {
 
 /*advantages*/
 
+.advantages{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .advantages-list .heading {
   margin-bottom: 10px;
+  text-align: left;
 
   color: var(--black-color);
   font-size: 14px;
@@ -261,37 +278,35 @@ body {
 
 .advantages-list{
   display: flex;
-  justify-content: space-between;
+  flex-basis: calc((100%-90px)/4);
+  margin-left: -30px;
 }
 
 .advantages-list .item{
   width: 270px;
+  margin-left: 30px;
 }
 
 .advantages-text {
   margin: 0;
 }
 
-.advantages-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 /* our doing */
 
-.our-respons{
-  text-align: center;
-  margin-bottom: 50px;
+.our-doing{
+  padding-bottom: 94px;
+
+}
+.our-doing .item{
+  margin-left: 30px;
 }
 
 .doing-list{
   display: flex;
-  justify-content: space-between;
+  flex-basis: calc((100%-60px)/3);
+  margin-left: -30px;
 }
 
-.our-doing-container {
-  padding-bottom: 94px;
-}
 .link.doing-img {
   display: block;
   box-sizing: content-box;
@@ -306,30 +321,29 @@ body {
   padding-bottom: 94px;
 }
 
-.team-heading {
-  margin-bottom: 50px;
-  text-align: center;
-}
-
 .team-list{
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc((100%-90px)/4);
+  margin-left: -30px;
 
-}
-
-.member-photo {
-  margin-bottom: 30px;
 }
 
 .our-team .member {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
 
-.position {
-  padding-top: 0;
+.wrapper{
+  padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--white-color);
+}
+
+.position {
+  padding: 0;
   margin: 0;
 
   font-size: 16px;
@@ -342,7 +356,7 @@ body {
 
 .member-item {
   display: inline-block;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .member-item:nth-child(4n){
@@ -395,6 +409,7 @@ body {
 
 .examples .heading {
   margin-bottom: 4px;
+  text-align: left;
 
   color: var(--black-color);
   font-size: 18px;
@@ -403,6 +418,7 @@ body {
 }
 
 .examples{
+  flex-basis: calc((100%-60px)/3);
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
@@ -417,22 +433,25 @@ body {
 }
 
 .example-img{
-display: block;
+  display: block;
 }
 
-.examples a{
+.example-item a{
   display: block;
-  box-sizing: content-box;
 }
 
 .example-item{
+  display: block;
   padding-bottom: 20px;
-  flex-basis: calc(100%/3-30px);
   margin-left: 30px;
   margin-top: 30px;
 }
 
 .example-wrapper{
-  padding: 20px 24px;
-  border: 1px solid var(--examples-berder-color);
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--examples-berder-color);
+  border-left: 1px solid var(--examples-berder-color);
+  border-right: 1px solid var(--examples-berder-color);
 }
