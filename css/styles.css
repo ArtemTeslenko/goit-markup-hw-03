@@ -276,14 +276,13 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-list{
+.advantages-list {
   display: flex;
   flex-basis: calc((100%-90px)/4);
   margin-left: -30px;
 }
 
-.advantages-list .item{
-  width: 270px;
+.advantages-list .item {
   margin-left: 30px;
 }
 
@@ -297,7 +296,8 @@ body {
   padding-bottom: 94px;
 
 }
-.our-doing .item{
+
+.our-doing .item {
   margin-left: 30px;
 }
 
@@ -316,14 +316,8 @@ body {
 
 /*our team*/
 
-.team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .team-list{
   display: flex;
-  flex-wrap: wrap;
   flex-basis: calc((100%-90px)/4);
   margin-left: -30px;
 
@@ -355,7 +349,7 @@ body {
 }
 
 .member-item {
-  display: inline-block;
+  display: block;
   margin-left: 30px;
 }
 
@@ -364,6 +358,9 @@ body {
 }
 
 .our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
   background-color: var(--our-team-bgc);
 }
 
@@ -428,21 +425,25 @@ body {
 .examples .work-type {
   margin: 0;
 
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 
 .example-img{
   display: block;
+  width: 100%;
 }
 
 .example-item a{
   display: block;
+  text-decoration: none;
 }
 
 .example-item{
   display: block;
-  padding-bottom: 20px;
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -451,6 +452,7 @@ body {
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
+  padding-right: 24px;
   border-bottom: 1px solid var(--examples-berder-color);
   border-left: 1px solid var(--examples-berder-color);
   border-right: 1px solid var(--examples-berder-color);
