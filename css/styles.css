@@ -283,6 +283,7 @@ body {
 }
 
 .advantages-list .item {
+  flex-basis: calc((100%-90px)/4);
   margin-left: 30px;
 }
 
@@ -299,11 +300,11 @@ body {
 
 .our-doing .item {
   margin-left: 30px;
+  flex-basis: calc((100%-60px)/3);
 }
 
 .doing-list{
   display: flex;
-  flex-basis: calc((100%-60px)/3);
   margin-left: -30px;
 }
 
@@ -318,7 +319,6 @@ body {
 
 .team-list{
   display: flex;
-  flex-basis: calc((100%-90px)/4);
   margin-left: -30px;
 
 }
@@ -351,6 +351,7 @@ body {
 .member-item {
   display: block;
   margin-left: 30px;
+  flex-basis: calc((100%-90px)/4);
 }
 
 .member-item:nth-child(4n){
@@ -415,11 +416,11 @@ body {
 }
 
 .examples{
-  flex-basis: calc((100%-60px)/3);
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
+  outline: 1px solid black;
 }
 
 .examples .work-type {
@@ -444,8 +445,10 @@ body {
 
 .example-item{
   display: block;
+  flex-basis: calc((100%-60px)/3);
   margin-left: 30px;
   margin-top: 30px;
+  
 }
 
 .example-wrapper{
